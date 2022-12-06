@@ -6,7 +6,7 @@ const CourseDetails = () => {
     const courseDetails = useLoaderData();
     return (
         <div>
-            <div className="card w-1/2 mx-auto bg-lime-100 shadow-xl my-16">
+            <div className="card w-1/2 mx-auto bg-green-200 shadow-xl my-16">
                 <figure><img className='mt-4 rounded-lg w-[550px]' src={courseDetails?.img} alt="course" /></figure>
                 <div className="card-body text-center">
                     <div className='flex justify-between '>

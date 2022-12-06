@@ -18,7 +18,7 @@ const Register = () => {
         event.preventDefault();
         const form = event.target;
         const name = form.name.value;
-        const photoURL = form.photoURL.value;
+        // const photoURL = form.photoURL.value;
         const email = form.email.value;
         const password = form.password.value;
         // console.log(name, photoURL, email, password);
@@ -29,6 +29,7 @@ const Register = () => {
                 console.log(user);
                 setError('');
                 form.reset();
+               
                 handleEmailVerification();
                 toast.success('Please verify your email address.')
             })
@@ -37,7 +38,6 @@ const Register = () => {
                 setError(e.message);
             });
     }
-
 
     const handleEmailVerification = () => {
         verifyEmail()

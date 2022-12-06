@@ -26,7 +26,7 @@ const Header = () => {
     }
     return (
         <>
-            <nav className="sticky  top-0 w-full z-50 text-gray-800">
+            <nav className="sticky  top-0 w-full z-50  text-gray-800">
                 <div className="navbar bg-sky-300">
                     <div className="flex-1 md:pl-5 mx-2">
                         <Link to="/">

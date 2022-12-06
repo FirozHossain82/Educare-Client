@@ -11,13 +11,13 @@ import { FaGoogle } from 'react-icons/fa';
 
 const Login = () => {
 
-    const [error, setError] = useState('');
+    const [error, setError] = useState( ' ' );
     const { signIn, setLoading, providerLogin } = useContext(AuthContext);
     const googleProvider = new GoogleAuthProvider()
     const navigate = useNavigate();
+    
     const location = useLocation();
-
-    const from = location.state?.from?.pathname || '/';
+    const from =  location.state?.from?.pathname || "/";
 
     const handleSubmit = event => {
         event.preventDefault();
@@ -25,7 +25,7 @@ const Login = () => {
         const email = form.email.value;
         const password = form.password.value;
 
-        signIn(email, password)
+         signIn(email, password)
             .then(result => {
                 const user = result.user;
                 console.log(user);
@@ -45,8 +45,29 @@ const Login = () => {
             .finally(() => {
                 setLoading(false);
             })
-    }
+    } 
 
+/*     signIn(email, password)
+    .then(result => {
+        const user = result.user;
+        console.log(user);
+        form.reset();
+        setError( ' ' );
+        // navigate('/')
+        navigate(from, {replace: true});
+    })
+    // .catch(error =>{
+    //     console.error(error);
+    //     setError(error.message);
+    // })
+    .catch(error =>{
+        console.error(error)
+        setError(error.message);
+
+    })
+}
+
+ */
 
     const handleGoogleSignIn = () => {
         providerLogin(googleProvider)
