@@ -28,8 +28,8 @@ const Contact = () => {
                 </div>
             </section>
             <section className='py-10 text-center'>
-                <p className=''><span className='pr-2'><i className="fa-solid fa-envelope"></i></span> faria@gmail.com</p>
-                <p className=''><span className='pr-2'><i className="fa-solid fa-phone"></i></span> +8801 77788800</p>
+                <p className=''><span className='pr-2'><i className="fa-solid fa-envelope"></i></span> firozhossain8076@gmail.com</p>
+                <p className=''><span className='pr-2'><i className="fa-solid fa-phone"></i></span> +8801637039482</p>
             </section>
         </div>
     );

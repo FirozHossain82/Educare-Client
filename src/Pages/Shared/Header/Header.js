@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { FaMoon, FaPencilRuler, FaSun, FaUser } from "react-icons/fa";
+import { FaMoon, FaBookReader, FaSun, FaUser } from "react-icons/fa";
 import toast from 'react-hot-toast';
 import { AuthContext } from '../../../Context/AuthProvider/AuthProvider';
 import { useDarkMode } from '../../../hooks/useDarkMode';
@@ -31,7 +31,7 @@ const Header = () => {
                     <div className="flex-1 md:pl-5 mx-2">
                         <Link to="/">
                             <div className="relative top-[]">
-                                <p className='font-mono font-extrabold text-base text-violet-600  md:text-2xl flex justify-center items-center'><FaPencilRuler /> Web-Care</p>
+                                <p className='font-mono font-extrabold text-base text-violet-600  md:text-2xl flex justify-center items-center'><FaBookReader /> Web-Care</p>
                             </div>
                         </Link>
                     </div>
